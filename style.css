@@ -1,0 +1,86 @@
+/* Resetarea stilurilor implicite ale browserului */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setarea fonturilor generale */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Stiluri pentru header-ul paginii */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #34495e;
+    margin: 10px 0;
+}
+
+/* Adăugarea unui fundal cu umbră și bordură pentru a face elementele h3 să iasă în evidență */
+h3:nth-child(2),
+h3:nth-child(3),
+h3:nth-child(4) {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Un efect de hover pe h3 pentru a crea interactivitate */
+/* #FFD700 */
+
+h3:nth-child(2):hover {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+h3:nth-child(3):hover {
+    background-color: #FFD700;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+h3:nth-child(4):hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Setarea unui fundal mai plăcut pentru întregul body */
+body {
+    background-color: #eaf2f8;
+}
+
+/* Marginile și centrările pentru a face pagina mai aranjată */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1,
+h3 {
+    margin: 10px;
+}
